@@ -9,11 +9,13 @@ public class Fruit {
         System.out.println("called get fruit method");
     }
 
+    // method overloading
     // method with 1 parameter defined
     public void getFruit(String name) {
         System.out.println("called get fruit method with 1 argument");
     }
 
+    // method overloading
     // method with 2 parameter defined
     public void getFruit(String name, Integer count) {
         System.out.println("called get fruit method with 2 argument");

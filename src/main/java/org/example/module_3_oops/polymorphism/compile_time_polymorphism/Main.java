@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Fruit obj = new Fruit();
 
+        // compile time polymorphism
+
         // calling getFruit method with no argument
         obj.getFruit();
 
