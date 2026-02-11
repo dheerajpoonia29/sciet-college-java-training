@@ -1,11 +1,11 @@
-package org.example.module_3_oops.abstraction.abtract_class.example_2;
+package org.example.module_3_oops.abstraction.with_interface;
 
 public class Main {
     public static void main(String[] args) {
-        Remote acObj = new Ac();
+        RemoteInterface acObj = new Ac();
         acObj.turnOn();
 
-        Remote tvObj = new Tv();
+        RemoteInterface tvObj = new Tv();
         tvObj.turnOn();
 
         acObj.turnOff();

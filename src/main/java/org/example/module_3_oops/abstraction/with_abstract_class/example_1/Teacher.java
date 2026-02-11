@@ -1,4 +1,4 @@
-package org.example.module_3_oops.abstraction.abtract_class.example_1;
+package org.example.module_3_oops.abstraction.with_abstract_class.example_1;
 
 public class Teacher extends Person {
     public void setDetail() {
