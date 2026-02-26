@@ -1,14 +1,15 @@
-package org.example.module_5_collection_framework.list_interface.array_list.questions;
+package org.example.module_5_collection_framework.list_interface.linked_list.questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Question1 {
     public static void main(String[] args) {
-        ArrayList<Integer> input = new ArrayList(Arrays.asList(10, 20, 10, 30, 20, 10, 40, 20));
+        LinkedList<Integer> input = new LinkedList(Arrays.asList(1, 2, 1, 3, 2));
 
-
-        ArrayList<Integer> output = new ArrayList(); // output [10, 20, 30, 40]
+        // write logic to remove duplicates elements from input
+        LinkedList<Integer> output = new LinkedList(); // output [10, 20, 30, 40]
         // you need to write logic to remove duplicates elements from input
         for(Integer ele: input) {
             if(output.contains(ele)==false) {
@@ -16,7 +17,7 @@ public class Question1 {
             }
         }
 
-        // 10 20 30 40
+        // 1, 2, 3
         for(Integer ele: output) {
             System.out.print(ele + " ");
         }
