@@ -10,7 +10,7 @@ public class CheckedExcemptionExample {
         // and it must need to be handled
         // program must have to handle the checked exception
         try {
-            FileReader file = new FileReader("myFile.txt");
+            FileReader file = new FileReader("myFile.txt.txt");
         } catch(FileNotFoundException e) {
             System.out.println("file not present");
         }
