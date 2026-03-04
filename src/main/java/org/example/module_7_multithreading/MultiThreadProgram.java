@@ -1,6 +1,8 @@
 package org.example.module_7_multithreading;
 
 public class MultiThreadProgram {
+    public static int data;
+
     public static void main(String[] args) {
         Task1Thread task1 = new Task1Thread();
         Task2Thread task2 = new Task2Thread();
@@ -15,6 +17,7 @@ public class MultiThreadProgram {
 class Task1Thread extends Thread {
     @Override
     public void run() {
+        MultiThreadProgram.data = 10;
         System.out.println("task 1 is started");
         try {
             Thread.sleep(5000); // Simulating a time-consuming task
@@ -28,6 +31,7 @@ class Task1Thread extends Thread {
 class Task2Thread extends Thread {
     @Override
     public void run() {
+        MultiThreadProgram.data = 20;
         System.out.println("task 2 is started");
         System.out.println("task 2 is completed");
     }
@@ -36,6 +40,7 @@ class Task2Thread extends Thread {
 class Task3Thread extends Thread {
     @Override
     public void run() {
+        MultiThreadProgram.data = 30;
         System.out.println("task 3 is started");
         System.out.println("task 3 is completed");
     }
