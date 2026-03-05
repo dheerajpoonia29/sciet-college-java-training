@@ -33,15 +33,23 @@ public class Order {
         }
 
         System.out.println("Waiter get the order from chef.");
+        System.out.println("Waiter is going to serve order...");
+        try {
+            sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         isOrderReceived = true;
+        System.out.println("Waiter served the order to customer.");
         notify();
     }
 
     // method3 chefMethod
     public synchronized void prepareAndNotifyOrder() {
         // in this function you need to call notify()
+
         System.out.println("Chef received the order from waiter");
-        // chef take 10 sec for cooking the order
+        System.out.println("Chef is preparing the order...");
         try {
             sleep(10000);
         } catch (InterruptedException e) {
