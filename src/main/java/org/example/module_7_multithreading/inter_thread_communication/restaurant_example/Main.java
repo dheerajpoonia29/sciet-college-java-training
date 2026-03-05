@@ -4,6 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Order order = new Order();
 
+        CustomerThread obj1 = new CustomerThread(order);
+        WaiterThread obj2 = new WaiterThread(order);
+        ChefThread obj3 = new ChefThread(order);
+
+        obj1.start();
+        obj2.start();
+        obj3.start();
     }
 }
 
@@ -17,7 +24,7 @@ class CustomerThread extends Thread {
 
     @Override
     public void run() {
-
+        order.placeAndReceiveOrder();
     }
 }
 
@@ -31,7 +38,7 @@ class WaiterThread extends Thread {
 
     @Override
     public void run() {
-
+        order.takeAndServeOrder();
     }
 }
 
@@ -45,6 +52,6 @@ class ChefThread extends Thread {
 
     @Override
     public void run() {
-
+        order.prepareAndNotifyOrder();
     }
 }
