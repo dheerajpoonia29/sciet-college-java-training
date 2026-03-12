@@ -1,4 +1,4 @@
-package org.example.module_9_advanced_java.example_2;
+package org.example.module_9_advanced_java.lambda_expression.example_2;
 
 public class Main {
     public static void main(String[] args) {
