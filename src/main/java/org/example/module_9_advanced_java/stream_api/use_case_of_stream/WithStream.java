@@ -1,4 +1,4 @@
-package org.example.module_9_advanced_java.stream_api;
+package org.example.module_9_advanced_java.stream_api.use_case_of_stream;
 
 import java.util.List;
 
