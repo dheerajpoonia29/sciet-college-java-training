@@ -1,11 +1,10 @@
 package org.example.module_9_advanced_java.stream_api.stream_pipeline;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class SourcesOfStream {
+public class SteramSources {
     public static void main(String[] args) {
         // 1st to create stream: using collection method stream()
         // source = Collection framework classes
